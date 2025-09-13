@@ -5,7 +5,7 @@ public class addressBook {
     private ArrayList<buddyInfo> buddies;
 
     // Constructor initializes the collection
-    public void AddressBook() {
+    public addressBook() {
         buddies = new ArrayList<>();
     }
 
@@ -25,7 +25,10 @@ public class addressBook {
     public static void main(String[] args){
 
         System.out.println("Address Book");
-
+        buddyInfo buddy = new buddyInfo("Tom", "Carleton", "6133333333");
+        addressBook buddies = new addressBook();
+        buddies.addBuddy(buddy);
+        buddies.removeBuddy(buddy);
     }
 }
 
