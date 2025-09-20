@@ -21,7 +21,7 @@ public class addressBook {
         buddies.remove(buddy);
     }
 
-
+//main function that removed and adds buddy
     public static void main(String[] args){
 
         System.out.println("Address Book");
@@ -29,6 +29,7 @@ public class addressBook {
         addressBook buddies = new addressBook();
         buddies.addBuddy(buddy);
         buddies.removeBuddy(buddy);
+        System.out.println("TEST COMPLETE");
     }
 }
 
